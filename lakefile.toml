@@ -1,0 +1,28 @@
+name = "Grunbaum"
+version = "0.1.0"
+defaultTargets = ["FranklFuredi", "ProjectionConstants", "Grunbaum"]
+
+[leanOptions]
+pp.unicode.fun = true
+autoImplicit = false
+relaxedAutoImplicit = false
+maxSynthPendingDepth = 3
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "v4.34.1"
+
+# Vendored copy of `FranklFuredi` (Frankl–Füredi, *An exact result for 3-graphs*).
+[[lean_lib]]
+name = "FranklFuredi"
+
+# Vendored copy of the parts of `ProjectionConstants` used here
+# (foundations and the Chalmers–Lewicki formula).
+[[lean_lib]]
+name = "ProjectionConstants"
+
+# The formalization of `Π₂ = 4/3` along the errata.
+[[lean_lib]]
+name = "Grunbaum"
+leanOptions = { weak.linter.mathlibStandardSet = true }
