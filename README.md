@@ -1,4 +1,4 @@
-#Proof of `Π₂ = 4/3` in Lean
+##Proof of `Π₂ = 4/3` in Lean
 
 ![build](https://github.com/GiulianoBasso/Grunbaum-lean/actions/workflows/build.yml/badge.svg)
 
