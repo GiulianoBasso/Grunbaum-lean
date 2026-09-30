@@ -16,10 +16,8 @@ Grünbaum's conjecture on the maximal projection constant of two-dimensional rea
 * G. Basso, *Errata to the single-author papers of Giuliano Basso*, 
 https://www.researchgate.net/publication/415013493_Errata_to_the_single-author_papers_of_Giuliano_Basso
 
-The classification of `K₄`-free two-graphs is taken from a formalization of Frankl and Füredi,
-*An exact result for 3-graphs* [FF], and the basic theory of projection constants and the formula
-of Chalmers and Lewicki from the library *Projection constants in Lean* [PC]. The cloning lemma
-used in Lemma C is formalized from Kumar, Mohar, Mojallal and Pragada [KMMP].
+The proof crucially relies on the classification of `K₄`-free two-graphs due to Frankl and Füredi,
+*An exact result for 3-graphs* [FF]. Their paper has been formally verified in Lean 4 in https://github.com/GiulianoBasso/FranklFuredi-lean
 
 Everything is proved from the standard axioms (`propext`, `Classical.choice`, `Quot.sound`):
 there is no `sorry`, no `native_decide` and no additional axiom.
@@ -32,11 +30,6 @@ model developed by Anthropic (model identifiers claude-opus-5-5 and claude-fable
 guided by Giuliano Basso. He chose the statements to formalize, built the project, ran the axiom
 check in `scripts/CheckAxioms.lean` and compared the statements in `Grunbaum/Main.lean` with the
 errata. 
-
-A formal proof certifies exactly the Lean statement that was proved. Lean and Mathlib check the
-proofs; what remains to be read by a human is the encoding of the definitions, described in the
-sections *Errata → Lean* and *Where the formal proofs differ from the errata* below. 
-
 
 
 ## The main theorem
