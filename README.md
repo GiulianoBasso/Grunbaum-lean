@@ -3,17 +3,7 @@
 ![build](https://github.com/GiulianoBasso/Grunbaum-lean/actions/workflows/build.yml/badge.svg)
 
 
-## Authorship
 
-The Lean code in this repository, including the vendored libraries, was written by Claude, an AI
-model developed by Anthropic (model identifiers claude-opus-5-5 and claude-fable-5-1), in sessions
-guided by Giuliano Basso. He chose the statements to formalize, built the project, ran the axiom
-check in `scripts/CheckAxioms.lean` and compared the statements in `Grunbaum/Main.lean` with the
-errata. 
-
-A formal proof certifies exactly the Lean statement that was proved. Lean and Mathlib check the
-proofs; what remains to be read by a human is the encoding of the definitions, described in the
-sections *Errata → Lean* and *Where the formal proofs differ from the errata* below. 
 
 
 This repository is a self-contained Lean 4 / Mathlib formalization of the proof of
@@ -34,6 +24,21 @@ used in Lemma C is formalized from Kumar, Mohar, Mojallal and Pragada [KMMP].
 
 Everything is proved from the standard axioms (`propext`, `Classical.choice`, `Quot.sound`):
 there is no `sorry`, no `native_decide` and no additional axiom.
+
+
+## Authorship
+
+The Lean code in this repository, including the vendored libraries, was written by Claude, an AI
+model developed by Anthropic (model identifiers claude-opus-5-5 and claude-fable-5-1), in sessions
+guided by Giuliano Basso. He chose the statements to formalize, built the project, ran the axiom
+check in `scripts/CheckAxioms.lean` and compared the statements in `Grunbaum/Main.lean` with the
+errata. 
+
+A formal proof certifies exactly the Lean statement that was proved. Lean and Mathlib check the
+proofs; what remains to be read by a human is the encoding of the definitions, described in the
+sections *Errata → Lean* and *Where the formal proofs differ from the errata* below. 
+
+
 
 ## The main theorem
 
@@ -247,7 +252,8 @@ The library `Grunbaum` is compiled with Mathlib's standard linter set
   (2019), no. 10, 3560–3585, arXiv:1901.07866.
 * **[Cor]** G. Basso, *Corrigendum to "Computation of maximal projection constants"*,
   J. Funct. Anal. 287 (2024), no. 5, Paper No. 110491, arXiv:2402.06672.
-* **[Err]** G. Basso, *Errata to the single-author papers of Giuliano Basso*, Section 3.
+* **[Err]** G. Basso, *Errata to the single-author papers of Giuliano Basso*, Section 3. 
+https://www.researchgate.net/publication/415013493_Errata_to_the_single-author_papers_of_Giuliano_Basso
 * **[AMOP]** G. Basso, *Almost minimal orthogonal projections*, Israel J. Math. 243 (2021),
   no. 1, 355–376, arXiv:2001.08698.
 * **[CL]** B. L. Chalmers and G. Lewicki, *A proof of the Grünbaum conjecture*, Studia Math.
