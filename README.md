@@ -13,9 +13,8 @@ $$\Pi_2 = \tfrac43,$$
 Grünbaum's conjecture on the maximal projection constant of two-dimensional real normed spaces
 (first proved by Chalmers and Lewicki), **along the route of the new proof in the errata**:
 
-* G. Basso, *Errata to the single-author papers of Giuliano Basso*, Section 3,
-  *Computation of maximal projection constants*, item 5) (Sections 4.2 and 4.3 of [JFA] are
-  replaced by Theorem A, Lemmas B–E, Proposition F and Corollary G).
+* G. Basso, *Errata to the single-author papers of Giuliano Basso*, 
+https://www.researchgate.net/publication/415013493_Errata_to_the_single-author_papers_of_Giuliano_Basso
 
 The classification of `K₄`-free two-graphs is taken from a formalization of Frankl and Füredi,
 *An exact result for 3-graphs* [FF], and the basic theory of projection constants and the formula
